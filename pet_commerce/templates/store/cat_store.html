@@ -1,0 +1,180 @@
+{% extends 'index.html' %} {% load static %} {% block main %}
+<!--final de menu de navegación  + cabecera-->
+<!--inicio de carrucel-->
+<div
+  id="carouselExampleCaptions"
+  class="carousel slide"
+  data-bs-ride="carousel"
+>
+  <div class="carousel-indicators">
+    <button
+      type="button"
+      data-bs-target="#carouselExampleCaptions"
+      data-bs-slide-to="0"
+      class="active"
+      aria-current="true"
+      aria-label="Slide 1"
+    ></button>
+    <button
+      type="button"
+      data-bs-target="#carouselExampleCaptions"
+      data-bs-slide-to="1"
+      aria-label="Slide 2"
+    ></button>
+    <button
+      type="button"
+      data-bs-target="#carouselExampleCaptions"
+      data-bs-slide-to="2"
+      aria-label="Slide 3"
+    ></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img
+        src="{% static 'assets//identificadores.png' %}"
+        href="./pagina_indicadores.html"
+        class="d-block w-100"
+        alt="..."
+      />
+      <div class="carousel-caption d-none d-md-block">
+        <h4>Conozca nuestros nuevos accesorios</h4>
+        <p>Ideal para su mascota, en casos de extravio.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img
+        src="{% static 'assets//Paseo.png' %}"
+        href="./pagina_correas.html"
+        class="d-block w-100"
+        alt="..."
+      />
+      <div class="carousel-caption d-none d-md-block">
+        <h5>¿te gusta salir acompañado de tu mascota?</h5>
+        <p>
+          tenemos la solución, multiples accesorios que te aliviaran tus
+          salidas.
+        </p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img
+        src="{% static 'assets//gatobanda.jpeg' %}"
+        href="./pagina_badanas.html"
+        class="d-block w-100"
+        alt="..."
+      />
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Viste a tu mascota a la moda</h5>
+        <p>¡multiples colores y tallas!.</p>
+      </div>
+    </div>
+  </div>
+  <button
+    class="carousel-control-prev"
+    type="button"
+    data-bs-target="#carouselExampleCaptions"
+    data-bs-slide="prev"
+  >
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button
+    class="carousel-control-next"
+    type="button"
+    data-bs-target="#carouselExampleCaptions"
+    data-bs-slide="next"
+  >
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<!--final de carrucel-->
+
+<!--inicio de parrafo que describe-->
+
+<section class="w-50 mx-auto text-center pt-5" id="intro">
+  <h1 class="p-3 fs-2 border-top border-3">
+    Consulta lo que necesites en nuestro wsp<span class="text-primary">
+      +59612345678</span
+    >
+  </h1>
+  <p class="p-3 fs-4">
+    <span></span>Tenemos los mejores productos de afamadas marcas a nivel
+    mundial. Tenemos el compromiso de entregar sólo lo mejor a ti y tus
+    amigales.
+  </p>
+</section>
+<!--final de parrafo que describe-->
+<section class="w-50 mx-auto text-center pt-5" id="intro">
+  <h3 class="p-3 fs-2 border-top border-3">
+    Accesorios para <span class="text-primary"> Perros</span>
+  </h3>
+</section>
+
+<!--inicio de imagenes con parrafo-->
+<div class="card-group">
+  <div class="card">
+    <img
+      src="{% static 'assets//gatobandana.jpeg' %}"
+      class="card-img-top"
+      alt="..."
+    />
+    <div class="card-body">
+      <h5 class="card-title">Bandanas</h5>
+      <p class="card-text">
+        Tenemos las mejores bandanas personalidadas para tu Gatito .
+      </p>
+
+      <center>
+        <a href="./pagina_badanas.html">
+          <button type="button" class="btn btn-primary btn-sm">VER</button>
+        </a>
+      </center>
+    </div>
+  </div>
+  <div class="card">
+    <img src="{% static 'assets//333.jpg' %}" class="card-img-top" alt="..." />
+    <div class="card-body">
+      <h5 class="card-title">Identificadores</h5>
+      <p class="card-text">
+        Tenemos miles de identificadores para que puedas elegir.
+      </p>
+
+      <center>
+        <a href="./pagina_indicadores.html">
+          <button type="button" class="btn btn-primary btn-sm">VER</button>
+        </a>
+      </center>
+    </div>
+  </div>
+  <div class="card">
+    <img src="{% static 'assets//2222222.jpg' %}" class="card-img-top" alt="..." />
+    <div class="card-body">
+      <h5 class="card-title">Correas</h5>
+      <p class="card-text">Correas para todos los tipos de tamaños .</p>
+      <center>
+        <a href="./pagina_correas.html">
+          <button type="button" class="btn btn-primary btn-sm">VER</button>
+        </a>
+      </center>
+    </div>
+  </div>
+  <div class="card">
+    <img src="{% static 'assets//22.jpeg' %}" class="card-img-top" alt="..." />
+    <div class="card-body">
+      <h5 class="card-title">Otros accesorios</h5>
+      <p class="card-text">¡Tenemos de lo que se ocurra para tu mascota!.</p>
+      <center>
+        <a href="./Otroos_pro.html">
+          <button type="button" class="btn btn-primary btn-sm">VER</button>
+        </a>
+      </center>
+    </div>
+  </div>
+</div>
+<!--final de imagenes con parrafo-->
+
+<br />
+<br />
+<br />
+{% endblock %}

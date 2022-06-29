@@ -1,0 +1,12 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block main %}
+    <form method="post">
+        {% csrf_token %}
+        <h3>¿Seguro que deseas borrar este item?: {{object}}</h3>
+        {{form}}
+        <div>
+            <button>Confirmar</button>
+        </div>
+    </form>
+{% endblock %}
