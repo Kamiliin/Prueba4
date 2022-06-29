@@ -30,9 +30,10 @@ def lista_pets(request):
 
 @api_view(['GET', 'PUT', 'DELETE'])
 @permission_classes((IsAuthenticated,))
-def detalle_pets(request, sku):
+def detalle_pets(request):
+    product_sku = request.GET.get('sku')
     try:
-        product = Product.objects.get(sku=id)
+        product = Product.objects.get(sku=product_sku)
     except Product.DoesNotExist:
         return Response(status=status.HTTP_404_NOT_FOUND)
     if request.method == 'GET':
